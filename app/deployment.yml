@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
   name: my-app
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: my-container
-        image: my-image:latest
+        image: my-image:21
         ports:
         - containerPort: 80
